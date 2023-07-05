@@ -4,8 +4,323 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice cream</title>
+
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <div class="container header">
+            <svg class="header__logo">
+                <use href=""></use>
+            </svg>
+            <div class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#" class="header__link">How it’s made?</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Our products</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                </ul>
+            </div>
+            <button class="header__btn">Buy now ></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__up">
+                <h1 class="hero__title">ice cream made with passion</h1>
+                <div class="hero__btn">
+                    <ul class="hero__list">
+                        <li class="hero__item"><a href="#" class="hero__link">Products</a></li>
+                        <li class="hero__item"><a href="#" class="hero__link">How it’s made?</a></li>
+                    </ul>
+                </div>
+                <div class="hero__numbers">
+                    <p class="hero__text">16<span class="hero__span">cafes</span></p>
+                    <p class="hero__text">23<span class="hero__span">food trucks</span></p>
+                </div>
+            </div>
+
+            <div class="hero__down">
+                <div class="hero__img">
+                    <picture>
+                        <source 
+                        srcset=""
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 768px)"
+                        type="image/jpeg"/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"
+                        type="image/jpeg"/>
+
+                        <img src="" alt="">
+                    </picture>
+                </div>
+                <p class="hero__describes">Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
+                <div class="hero__main">
+                    <picture>
+                        <source 
+                        srcset=""
+                        media="(min-width: 1200px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 768px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"
+                        type=""/>
+
+                        <img src="" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <label for="name" class="products__label">100% natural</label>
+            <h2 class="products__title">products</h2>
+
+            <div class="products__wrap">
+                <ul class="products__list">
+                    <li class="products__item">
+                        <h3 class="products__name">ice cream</h3>
+                        <p class="products__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                        <a href="#" class="products__link"></a>
+                    </li>
+                    <li class="products__item">
+                        <h3 class="products__name">ice coffee</h3>
+                        <p class="products__text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+                        <a href="#" class="products__link"></a>
+                    </li>
+                    <li class="products__item">
+                        <h3 class="products__name">milkshakes</h3>
+                        <p class="products__text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+                        <a href="#" class="products__link"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about">
+            <label for="name" class="about__label">tradition and love</label>
+            <h2 class="about__title">how it’s made?</h2>
+
+            <div class="about__wrap">
+                <img src="" alt="" class="about__image">
+                <p class="about__text">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. 
+                    <br> We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
+                <a href="#" class="about__link">Read more</a>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2 hidden>advantages</h2>
+            <div class="advantages__wrap">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <span class="advantages__span">721</span>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <span class="advantages__span">16kg</span>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <span class="advantages__span">84</span>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery__img">
+                    <picture>
+                        <source 
+                        srcset=""
+                        media="(min-width: 1200px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 768px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"
+                        type=""/>
+
+                        <img src="" alt="">
+                    </picture>
+
+                    <picture>
+                        <source 
+                        srcset=""
+                        media="(min-width: 1200px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 768px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"
+                        type=""/>
+
+                        <img src="" alt="">
+                    </picture>
+
+                    <picture>
+                        <source 
+                        srcset=""
+                        media="(min-width: 1200px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 768px)"
+                        type=""/>
+
+                        <source 
+                        srcset=""
+                        media="(min-width: 480px)"
+                        type=""/>
+
+                        <img src="" alt="">
+                    </picture>
+                </div>
+        </section>
+
+        <section class="reviews">
+            <img src="" alt="" class="reviews__image">
+            <p class="reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+            <p class="reviews__name">Emily, Los Angeles</p>
+
+            <img src="" alt="" class="reviews__image">
+            <p class="reviews__text">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
+            <p class="reviews__name">Bryan, New-York</p>
+
+            <img src="" alt="" class="reviews__image">
+            <p class="reviews__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!</p>
+            <p class="reviews__name">Diana, Chicago</p>
+        </section>
+
+        <section class="contacts">
+            <h2 hidden>contacts</h2>
+            <div class="contacts__wrap">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <label for="name" class="contacts__label">CAFE</label>
+                        <h3 class="contacts__title">Chicago</h3>
+                        <a href="https://www.google.com.ua/maps/place/10340+Ridgeland+Ave,+Chicago+Ridge,+IL+60415,+%D0%A1%D0%A8%D0%90/@41.7033903,-87.782315,17z/data=!3m1!4b1!4m6!3m5!1s0x880e39ad302b2c19:0xc808e9b14d04eb2b!8m2!3d41.7033903!4d-87.7797401!16s%2Fg%2F11jnxh2b00?hl=ru&entry=ttu" 
+                        target="_blank" rel="noopener noreferrer nofollow"
+                        class="contacts__map">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+
+                        <h3 class="contacts__title">Monday - Friday</h3>
+                        <p class="contacts__text">06:00 AM - 10:00 PM</p>
+
+                        <h3 class="contacts__title">Saturday - Sunday</h3>
+                        <p class="contacts__text">08:00 AM - 16:00 PM</p>
+
+                        <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                    </li>
+
+                    <li class="contacts__item">
+                        <label for="name" class="contacts__label">FOOD TRUCK</label>
+                        <h3 class="contacts__title">Los Angeles</h3>
+                        <a href="https://www.google.com.ua/maps/search/1003+Manhattan+Ave,+Manhattan+Beach,+CA+90263,+USA/@33.9593098,-118.6447885,12z/data=!3m1!4b1?hl=ru&entry=ttu" 
+                        target="_blank" rel="noopener noreferrer nofollow"
+                        class="contacts__map">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+
+                        <h3 class="contacts__title">Monday - Friday</h3>
+                        <p class="contacts__text">06:00 AM - 10:00 PM</p>
+
+                        <h3 class="contacts__title">Saturday - Sunday</h3>
+                        <p class="contacts__text">08:00 AM - 16:00 PM</p>
+
+                        <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                    </li>
+
+                    <li class="contacts__item">
+                        <label for="name" class="contacts__label">CAFE</label>
+                        <h3 class="contacts__title">New York</h3>
+                        <a href="https://www.google.com.ua/maps/place/726+Sterling+Pl,+Brooklyn,+NY+11216,+%D0%A1%D0%A8%D0%90/@40.6726938,-73.9573089,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b9e1735b38f:0xb5fe454b88e9c2c0!8m2!3d40.6726938!4d-73.954734!16s%2Fg%2F11dfjw_l7m?hl=ru&entry=ttu" 
+                        target="_blank" rel="noopener noreferrer nofollow"
+                        class="contacts__map">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+
+                        <h3 class="contacts__title">Monday - Friday</h3>
+                        <p class="contacts__text">06:00 AM - 10:00 PM</p>
+
+                        <h3 class="contacts__title">Saturday - Sunday</h3>
+                        <p class="contacts__text">08:00 AM - 16:00 PM</p>
+
+                        <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+                        <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="contacts-btn__list">
+                <li class="contacts-btn__item">
+                    <a href="#" class="contacts-btn__link">Our Locations</a>
+                </li>
+                <li class="contacts-btn__item">
+                    <a href="#" class="contacts-btn__link">Franchise</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="left-side">
+                <span class="left-side__span">homemade ice cream made</span>
+                <h2 class="left-side__title">with passion</h2>
+            </div>
+
+            <div class="right-side">
+                <ul class="right-side__list">
+                    <li class="right-side__item">
+                        <a href="#" class="right-side__link">
+                            <svg class="right-side__icon">
+                                <use href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="right-side__item">
+                        <a href="#" class="right-side__link">
+                            <svg class="right-side__icon">
+                                <use href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="right-side__item">
+                        <a href="#" class="right-side__link">
+                            <svg class="right-side__icon">
+                                <use href=""></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="right-side__text">Feel free to contact </p>
+                <a href="tel:+610383766284">+61 (0) 383 766 284</a>
+            </div>
+        </div>
+        <p class="footer__text">© 2022 - IceCream. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

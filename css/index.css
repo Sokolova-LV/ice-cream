@@ -13,10 +13,14 @@ body {
     --white-text-color: #fcfcfc;
     --accent-color: #F8D24E;
 
-    --main-font-family
-    --accent-font-family
+    --black: #000000;
+    --white: #ffffff;
+
+    --main-font-family: 'Montserrat', sans-serif;
+    --accent-font-family: 'Seymour One', sans-serif;
+    --third-font-family: 'DM Sans', sans-serif;
     
-    width: 100%;
+    width: 100%; 
 }
 
 ul, li {
@@ -37,4 +41,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
 }

@@ -251,7 +251,30 @@ header::after {
     text-transform: lowercase;
 }
 
-.hero__down {
+.hero__img-plus-text {
     display: flex;
-    justify-content: space-between;
+}
+
+.hero__img {
+    margin-top: 42px;
+    margin-right: 20px;
+}
+
+.hero__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__describes {
+    width: 200px;
+    margin-top: 110px;
+    font-family: var(--third-font-family);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.hero__arrow {
+    margin-top: 24px;
 }

@@ -389,7 +389,6 @@ header::after {
 
 .products__text {
     display: block;
-    height: 142px;
     padding: 66px 64px 50px;
     font-family: var(--third-font-family);
     text-align: center;
@@ -401,4 +400,115 @@ header::after {
     color: var(--black-text-color);
 }
 
+.products__btn {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+.about {
+    background-color: var(--main-background-color);
+}
+
+.about__label {
+    display: block;
+    margin-bottom: 12px;
+    padding-top: 60px;
+    font-family: var(--main-font-family);
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+
+.about__title {
+    margin-bottom: 120px;
+    font-family: var(--accent-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 2.16px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+
+.about__wrap {
+    display: flex;
+}
+
+.about__column {
+    margin-left: 110px;
+}
+
+.about__text {
+    width: 462px;
+    margin-bottom: 8px;
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    letter-spacing: 0.64px;
+    font-style: normal;
+    color: var(--white-text-color);
+}
+
+.about__span {
+    font-size: 14px;
+    line-height: 27.16px;
+    letter-spacing: 0.56px;
+}
+
+.about__link {
+    display: block;
+    width: 164px;
+    height: 42px;
+    padding: 12px 34px;
+}
+
+header__btn 
+    display: flex;
+    width: 152px;
+    height: 42px;
+    padding: 10px 34px;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--main-font-family);
+    color: var(--black);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border-color: transparent;
+
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    background-color: var(--hover);
+    transition: var(--transition);
+}
+
+.header__btn:focus {
+    color: var(--white);
+}
+
+.header__btn:disabled {
+    background-color: var(--disabled);
+    color: var(--black);
+
+    .btn-arrow:focus {
+            fill: var(--white);
+            transition: var(--transition);
+        }

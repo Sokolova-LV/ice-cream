@@ -508,4 +508,58 @@ header {
 
 .advantages__list {
     display: flex;
+    justify-content: space-between;
 }
+
+.advantages__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 368px;
+}
+
+.advantages__img {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+    background-color: var(--accent-color);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.advantages__span {
+    margin-bottom: 12px;
+    font-family: var(--main-font-family);
+    text-align: center;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 2.32px;
+    color: var(--white-text-color);
+}
+
+.advantages__text {
+    padding-bottom: 40px;
+    font-family: var(--main-font-family);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28.16px;
+    letter-spacing: 0.32px;
+    color: var(--white-text-color);
+}
+
+.gallery {
+    padding-top: 40px;
+    background-color: var(--main-background-color);
+}
+
+.gallery__wrap {
+    display: flex;
+    justify-content: center;
+}
+

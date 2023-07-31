@@ -282,7 +282,7 @@ header {
 
 @media screen and (min-width: 1200px) {
     .products {
-        width: 1200px;
+        width: 100%;
         height: 1052px;
         background-image: url(/img/background/desktop.jpg);
     }
@@ -563,3 +563,76 @@ header {
     justify-content: center;
 }
 
+.gallery__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery__list .gallery__item {
+    width: 30%;
+    transition: all 600ms ease;
+}
+
+.gallery__list:hover .gallery__item {
+    opacity: 0.5;
+}
+
+.gallery__list .gallery__item:hover {
+    width: 100%;
+    opacity: 1;
+}
+
+.reviews {
+    background-image: url(/img/background/mobile.jpg);
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        background-image: url(/img/background/tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reviews {
+        width: 100%;
+        background-image: url(/img/background/desktop.jpg);
+    }
+}
+
+.reviews__card {
+    width: 968px;
+    margin: auto;
+}
+
+.reviews__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.reviews__text {
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29.76px;
+    letter-spacing: 0.64px;
+    font-style: normal;
+    text-align: center;
+    color: var(--white-text-color);
+
+    margin: 32px 0;
+    background-color: var(--main-background-color);
+    border-radius: 24px;
+    padding: 43px 109px;
+}
+
+.reviews__name {
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29.76px;
+    font-style: normal;
+    text-align: center;
+    color: var(--black-text-color);
+}

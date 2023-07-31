@@ -202,27 +202,54 @@
 
         <section class="container gallery">
             <div class="gallery__wrap">
-                <picture class="gallery__img">
-                    <source
-                        srcset=""
-                        media=""
-                        type=""/>
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <picture>
+                            <source 
+                                srcset="./img/gallery/first-1x.png 1x, ./img/gallery/first-2x.png 2x"
+                                media="(min-width: 320px)"
+                                type="image/png" />
 
-                    <img src="" alt="">
-                </picture>
+                            <img src="./img/gallery/first-1x.png" alt="first">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source 
+                                srcset="./img/gallery/second-1x.png 1x, ./img/gallery/second-2x.png 2x" 
+                                media="(min-width: 320px)"
+                                type="image/png" />
+                    
+                            <img src="./img/gallery/second-1x.png" alt="second">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source 
+                                srcset="./img/gallery/third-1x.png 1x, ./img/gallery/third-2x.png 2x" 
+                                media="(min-width: 320px)"
+                                type="image/png" />
+                    
+                            <img src="./img/gallery/third-1x.png" alt="third">
+                        </picture>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="container reviews">
-            <img src="" alt="" class="reviews__image">
-            <p class="reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
-            <p class="reviews__name">Emily, Los Angeles</p>
-
-            <img src="" alt="" class="reviews__image">
+            <div class="reviews__card">
+                <img src="./img/reviews/first.jpg" alt="first" class="reviews__image">
+                <p class="reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+                    addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                <p class="reviews__name">Emily, Los Angeles</p>
+            </div>
+            
+            <img src="./img/reviews/second.jpg" alt="second" class="reviews__image">
             <p class="reviews__text">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
             <p class="reviews__name">Bryan, New-York</p>
 
-            <img src="" alt="" class="reviews__image">
+            <img src="./img/reviews/third.jpg" alt="third" class="reviews__image">
             <p class="reviews__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!</p>
             <p class="reviews__name">Diana, Chicago</p>
         </section>

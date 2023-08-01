@@ -555,6 +555,7 @@ header {
 
 .gallery {
     padding-top: 40px;
+    padding-bottom: 8px;
     background-color: var(--main-background-color);
 }
 
@@ -601,6 +602,7 @@ header {
 
 .reviews__card {
     width: 968px;
+    padding-top: 140px;
     margin: auto;
 }
 
@@ -609,6 +611,7 @@ header {
     height: 85px;
     border-radius: 50%;
     margin: auto;
+    margin-bottom: 32px;
 }
 
 .reviews__text {
@@ -621,6 +624,7 @@ header {
     text-align: center;
     color: var(--white-text-color);
 
+    width: 968px;
     margin: 32px 0;
     background-color: var(--main-background-color);
     border-radius: 24px;
@@ -628,6 +632,7 @@ header {
 }
 
 .reviews__name {
+    margin: 32px 0;
     font-family: var(--main-font-family);
     font-size: 16px;
     font-weight: 500;
@@ -635,4 +640,30 @@ header {
     font-style: normal;
     text-align: center;
     color: var(--black-text-color);
+}
+
+.reviews__dots {
+    display: flex;
+    justify-content: center;
+    width: 72px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.reviews__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.reviews__dot:active {
+    background-color: #84A178;
+}
+
+.reviews__dot:hover:not(.active),
+.reviews__dot:focus:not(.active) {
+    background-color: #84A178;
+    cursor: pointer;
+    transition: var(--transition);
 }

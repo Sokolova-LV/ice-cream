@@ -667,3 +667,8 @@ header {
     cursor: pointer;
     transition: var(--transition);
 }
+
+#card-1:hover ~ #dot-1 {
+    
+}
+

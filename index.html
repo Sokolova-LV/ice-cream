@@ -238,31 +238,52 @@
         </section>
 
         <section class="container reviews">
-            <div class="reviews__card" id="card-1">
-                <img src="./img/reviews/first.jpg" alt="first" class="reviews__image">
-                <p class="reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
-                    addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
-                <p class="reviews__name">Emily, Los Angeles</p>
-            </div>
-
-            <div class="reviews__dots">
-                <span class="reviews__dot" id="dot-1"></span>
-                <span class="reviews__dot" id="dot-2"></span>
-                <span class="reviews__dot" id="dot-3"></span>
-            </div>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div id="reviews">
+                    <div id="overflow">
+                        <div class="review__wrap">
             
-            <div class="reviews__card" id="card-2">
-                <img src="./img/reviews/second.jpg" alt="second" class="reviews__image">
-                <p class="reviews__text">Every day we come to you with friends after classes in college. We love your ice cream and
-                    casual atmosphere!</p>
-                <p class="reviews__name">Bryan, New-York</p>
-            </div>
-
-            <div class="reviews__card" id="card-3">
-                <img src="./img/reviews/third.jpg" alt="third" class="reviews__image">
-                <p class="reviews__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
-                    excellent service - always served politely and quickly!</p>
-                <p class="reviews__name">Diana, Chicago</p>
+                            <div class="review card-1">
+                                <div class="slide-content">
+                                    <img src="./img/reviews/first.jpg" alt="first" class="reviews__image">
+                                    <p class="reviews__text">I love visiting your cafe. You prepare the most delicious ice cream in
+                                        Los Angeles! In
+                                        addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                                    <p class="reviews__name">Emily, Los Angeles</p>
+                                </div>
+                            </div>
+            
+                            <div class="review card-2">
+                                <div class="slide-content">
+                                    <img src="./img/reviews/second.jpg" alt="second" class="reviews__image">
+                                    <p class="reviews__text">Every day we come to you with friends after classes in college. We love
+                                        your ice cream and
+                                        casual atmosphere!</p>
+                                    <p class="reviews__name">Bryan, New-York</p>
+                                </div>
+                            </div>
+            
+                            <div class="review card-3">
+                                <div class="slide-content">
+                                    <img src="./img/reviews/third.jpg" alt="third" class="reviews__image">
+                                    <p class="reviews__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And
+                                        I really like the
+                                        excellent service - always served politely and quickly!</p>
+                                    <p class="reviews__name">Diana, Chicago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
             </div>
         </section>
 

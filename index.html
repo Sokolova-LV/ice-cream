@@ -28,11 +28,17 @@
                 </ul>
             </div>
             <div class="button">
-                <button class="header__btn">Buy now
-                    <svg width="12" height="12" class="btn-arrow">
-                        <use href="./img/icons.svg#icon-btn-arrow"></use>
-                    </svg>
-                </button>
+                <button data-modal-open class="header__btn">Buy now</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close class="btn-modal-close" type="button">
+                        <svg class="icon-close-modal">
+                            <use href="./img/btn-close.svg"></use>
+                        </svg>
+                    </button>
+                    <p>Buy now</p>
+                </div>
             </div>
         </div>
     </header>
@@ -306,6 +312,8 @@
                         <h3 class="contacts__title">Saturday - Sunday</h3>
                         <p class="contacts__text">08:00 AM - 16:00 PM</p>
 
+                        <hr>
+
                         <a href="tel:+610383766284" class="contacts__tel">+61(0) 383 766 284</a>
                         <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
                     </li>
@@ -317,11 +325,15 @@
                         target="_blank" rel="noopener noreferrer nofollow"
                         class="contacts__map">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
 
+                        <hr>
+
                         <h3 class="contacts__title">Monday - Friday</h3>
                         <p class="contacts__text">06:00 AM - 10:00 PM</p>
 
                         <h3 class="contacts__title">Saturday - Sunday</h3>
                         <p class="contacts__text">08:00 AM - 16:00 PM</p>
+
+                        <hr>
 
                         <a href="tel:+610383766284" class="contacts__tel">+61(0) 383 766 284</a>
                         <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
@@ -334,11 +346,15 @@
                         target="_blank" rel="noopener noreferrer nofollow"
                         class="contacts__map">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
 
+                        <hr>
+
                         <h3 class="contacts__title">Monday - Friday</h3>
                         <p class="contacts__text">06:00 AM - 10:00 PM</p>
 
                         <h3 class="contacts__title">Saturday - Sunday</h3>
                         <p class="contacts__text">08:00 AM - 16:00 PM</p>
+
+                        <hr>
 
                         <a href="tel:+610383766284" class="contacts__tel">+61(0) 383 766 284</a>
                         <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
@@ -347,10 +363,10 @@
             </div>
             <ul class="contacts-btn__list">
                 <li class="contacts-btn__item">
-                    <a href="#" class="contacts-btn__link">Our Locations</a>
+                    <a href="#" class="contacts-btn__locations">Our Locations</a>
                 </li>
                 <li class="contacts-btn__item">
-                    <a href="#" class="contacts-btn__link">Franchise</a>
+                    <a href="#" class="contacts-btn__franchise">Franchise</a>
                 </li>
             </ul>
         </section>
@@ -366,32 +382,36 @@
             <div class="right-side">
                 <ul class="right-side__list">
                     <li class="right-side__item">
-                        <a href="#" class="right-side__link">
-                            <svg class="right-side__icon">
-                                <use href=""></use>
+                        <a href="https://github.com/github" class="right-side__a">
+                            <svg class="right-side__icon" width="34" height="34">
+                                <use href="./img/icons.svg#icon-github-icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="right-side__item">
-                        <a href="#" class="right-side__link">
-                            <svg class="right-side__icon">
-                                <use href=""></use>
+                        <a href="https://telegram.org/" class="right-side__a">
+                            <svg class="right-side__icon" width="34" height="34">
+                                <use href="./img/icons.svg#icon-telegram-icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="right-side__item">
-                        <a href="#" class="right-side__link">
-                            <svg class="right-side__icon">
-                                <use href=""></use>
+                        <a href="https://uk-ua.facebook.com/" class="right-side__a">
+                            <svg class="right-side__icon" width="34" height="34">
+                                <use href="./img/icons.svg#icon-facebook-icon"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
-                <p class="right-side__text">Feel free to contact </p>
-                <a href="tel:+610383766284">+61 (0) 383 766 284</a>
+                <div class="right-side__info">
+                    <p class="right-side__text">Feel free to contact</p>
+                    <a class="right-side__link" href="tel:+610383766284">+61 (0) 383 766 284</a>
+                </div>
             </div>
         </div>
-        <p class="container footer__text">© 2022 - IceCream. All Rights Reserved.</p>
+        <p class="footer__text">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
+
+    <script src="./modal.js"></script>
 </body>
 </html>

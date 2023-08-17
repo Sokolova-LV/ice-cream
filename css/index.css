@@ -95,7 +95,7 @@ header {
     margin-left: 4px;
 }
 
-.header__btn {
+.header__modal-open {
     display: flex;
     width: 152px;
     height: 42px;
@@ -117,16 +117,16 @@ header {
     cursor: pointer;
 }
 
-.header__btn:hover {
+.header__modal-open:hover {
     background-color: var(--hover);
     transition: var(--transition);
 }
 
-.header__btn:focus {
+.header__modal-open:focus {
     color: var(--white);
 }
 
-.header__btn:disabled {
+.header__modal-open:disabled {
     background-color: var(--disabled);
     color: var(--black);
 }
@@ -148,7 +148,7 @@ header {
     pointer-events: none;
 }
 
-.modal {
+.header__modal {
     position: absolute;
     display: block;
     top: 50%;
@@ -161,15 +161,26 @@ header {
     border: 2px solid var(--accent-color);
 }
 
-.btn-modal-close {
+.header-btn {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: auto;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.header__modal-close {
     position: absolute;
+    display: block;
     top: 12px;
     right: 12px;
     width: 24px;
     height: 24px;
-    background-color: transparent;
     cursor: pointer;
-    fill: var(--black);
+    transition: var(--transition);
 }
 
 .hero {

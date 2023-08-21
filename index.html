@@ -34,10 +34,43 @@
                 <div class="header__modal">
                     <button header-modal-close class="header-btn header__modal-close" type="button">
                         <svg width="24" height="24">
-                            <use class="header__modal-close" href="./img/close.svg"></use>
+                            <use class="header__modal-close" href="./img/icons.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <p>Buy now</p>
+                    <h2 class="header__modal-title">Buy now</h2>
+                    <div class="header__modal-wrap">
+                        <ul class="header__modal-list">
+                            <li class="header__modal-item">
+                                <p class="header__modal-text">ice cream</p>
+                            </li>
+                            <li class="header__modal-item">
+                                <img src="" alt="">
+                                <p class="header__modal-text">ice coffee</p>
+                            </li>
+                            <li class="header__modal-item">
+                                <img src="" alt="">
+                                <p class="header__modal-text">milkshake</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="form">
+                        <div class="header__modal-form">
+                            <input hidden id="name">
+                            <label class="header__modal-label" for="name"></label>
+                            <textarea class="header__modal-textarea" name="name" id="name" placeholder="Name"></textarea>
+                        </div>
+                        <div class="header__modal-form">
+                            <input hidden id="tel">
+                            <label class="header__modal-label" for="tel"></label>
+                            <textarea class="header__modal-textarea" name="tel" id="tel" placeholder="Phone"></textarea>
+                        </div>
+                        <div class="header__modal-form">
+                            <input hidden id="comment">
+                            <label class="header__modal-label" for="comment"></label>
+                            <textarea class="header__modal-textarea-comment" name="comment" id="comment" placeholder="Comment"></textarea>
+                        </div>
+                    </form>
+                    <button class="header__modal-btn" type="submit">Submit</button>
                 </div>
             </div>
         </div>

@@ -308,6 +308,21 @@ header {
     transition: var(--transition);
 }
 
+.header__modal-textarea:focus {
+    border-color: var(--hover);
+    outline: 0 none;
+}
+
+.header__modal-textarea::placeholder {
+    position: absolute;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    font-style: normal;
+    color:var(--black-text-color);
+}
+
 .header__modal-textarea-comment {
     display: block;
     margin: auto;
@@ -321,6 +336,46 @@ header {
     caret-color: var(--black);
     color: var(--black);
     transition: var(--transition);
+}
+
+.header__modal-textarea-comment:focus {
+    border-color: var(--hover);
+    outline: 0 none;
+}
+
+.header__modal-textarea-comment::placeholder {
+    position: absolute;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    font-style: normal;
+    color:var(--black-text-color);
+}
+
+.header__modal-btn {
+    margin: 32px auto 0;
+    display: block;
+    padding: 12px 34px;
+
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    color: var(--black-text-color);
+
+    border-radius: 10px;
+    background: var(--accent-color);
+    border-color: transparent;
+}
+
+.header__modal-btn:hover,
+.header__modal-btn:focus {
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--hover);
 }
 
 .hero {

@@ -161,30 +161,21 @@ header {
     border: 2px solid var(--accent-color);
 }
 
-.header-btn {
-    display: block;
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.header__modal-close {
+.modal-close {
     position: absolute;
     display: block;
     top: 12px;
     right: 12px;
     width: 24px;
     height: 24px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     transition: var(--transition);
 }
 
-.header__modal-close:hover,
-.header__modal-close:focus {
+.modal-close:hover,
+.modal-close:focus {
     fill: var(--hover);
 }
 
@@ -599,7 +590,8 @@ header {
 
 .products__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 }
 
 .products__item {
@@ -633,12 +625,81 @@ header {
     color: var(--black-text-color);
 }
 
-.products__btn {
+.products__modal-open {
     display: block;
     margin: auto;
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.products__modal {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    padding: 32px 40px;
+    background: var(--white-text-color);
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+}
+
+.products__modal-title {
+    margin-bottom: 24px;
+    font-family: var(--accent-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
+}
+
+.products__modal-img {
+    display: block;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.products__modal-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products__modal-item {
+    margin-bottom: 48px;
+    text-align: center;
+    font-family: var(--main-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
+
+    background: #9CBE8F;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+
+.products__modal-text {
+    font-weight: 400;
+    line-height: normal;
+    background: var(--white-text-color);
+}
+
+.products__modal-article {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
 }
 
 .about {

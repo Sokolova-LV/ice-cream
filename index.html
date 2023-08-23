@@ -32,9 +32,9 @@
             </div>
             <div class="backdrop is-hidden" header-modal>
                 <div class="header__modal">
-                    <button header-modal-close class="header-btn header__modal-close" type="button">
+                    <button header-modal-close class="modal-close" type="button">
                         <svg width="24" height="24">
-                            <use class="header__modal-close" href="./img/icons.svg#icon-close"></use>
+                            <use href="./img/icons.svg#icon-close"></use>
                         </svg>
                     </button>
                     <h2 class="header__modal-title">Buy now</h2>
@@ -67,8 +67,8 @@
                             <label class="header__modal-label" for="comment"></label>
                             <textarea class="header__modal-textarea-comment" name="comment" id="comment" placeholder="Comment"></textarea>
                         </div>
+                        <button class="header__modal-btn" type="submit">Submit</button>
                     </form>
-                    <button class="header__modal-btn" type="submit">Submit</button>
                 </div>
             </div>
         </div>
@@ -141,16 +141,40 @@
                     <li class="products__item">
                         <h3 class="products__name">ice cream</h3>
                         <p class="products__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p><br><br><br>
-                        <button class="products__btn">
+                        <button products-modal-open class="products__modal-open">
                             <svg width="40" height="16">
                                 <use href="./img/icons.svg#icon-black-arrow"></use>
                             </svg>
                         </button>
+                        <div class="backdrop is-hidden" products-modal>
+                            <div class="products__modal">
+                                <button products-modal-close class="modal-close">
+                                    <svg width="24" height="24">
+                                        <use href="./img/icons.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="products__modal-title">Chocolate ice cream</h2>
+                                <picture>
+                                    <source
+                                    srcset="./img/products/modal/fourth-1x.png 1x, ./img/products/modal/fourth-2x.png 2x"
+                                    media="(min-width: 320px)"
+                                    type="image/png" />
+                                    <img class="products__modal-img" src="./img/products/modal/fourth-1x.png" alt="products-modal">
+                                </picture>
+                                <ul class="products__modal-list">
+                                    <li class="products__modal-item">320<p class="products__modal-text">kcal</p></li>
+                                    <li class="products__modal-item">4g<p class="products__modal-text">Protein</p></li>
+                                    <li class="products__modal-item">8,2g<p class="products__modal-text">Fats</p></li>
+                                    <li class="products__modal-item">40,4g<p class="products__modal-text">Carbs</p></li>
+                                </ul>
+                                <h3 class="products__modal-article">Ingredients</h3>
+                            </div>
+                        </div>
                     </li>
                     <li class="products__item">
                         <h3 class="products__name">ice coffee</h3>
                         <p class="products__text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                        <button class="products__btn">
+                        <button products-modal-open class="products__modal-open">
                             <svg width="40" height="16">
                                 <use href="./img/icons.svg#icon-black-arrow"></use>
                             </svg>
@@ -159,7 +183,7 @@
                     <li class="products__item">
                         <h3 class="products__name">milkshakes</h3>
                         <p class="products__text">Sweet drinks based on milk and ice cream,<br>supplemented with syrups, fruits, berries and other sweets of your choice</p>
-                        <button class="products__btn">
+                        <button products-modal-open class="products__modal-open">
                             <svg width="40" height="16">
                                 <use href="./img/icons.svg#icon-black-arrow"></use>
                             </svg>
@@ -443,6 +467,7 @@
         <p class="footer__text">© 2023 - IceCream. All Rights Reserved.</p>
     </footer>
 
-    <script src="./modal.js"></script>
+    <script src="./js/header-modal.js"></script>
+    <script src="./js/products-modal.js"></script>
 </body>
 </html>

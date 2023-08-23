@@ -8,5 +8,5 @@
 
     function toggleModal() {
         modal.classList.toggle("is-hidden");
-  }
+    }
 })();

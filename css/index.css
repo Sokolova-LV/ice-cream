@@ -25,6 +25,19 @@ body {
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     width: 100%; 
+
+    *::-webkit-scrollbar {
+            width: 5px;
+        }
+    
+        *::-webkit-scrollbar-track {
+            background: var(--white-text-color);
+        }
+    
+        *::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            border: 4px solid var(--accent-color);
+        }
 }
 
 ul, li {
@@ -633,6 +646,13 @@ header {
     cursor: pointer;
 }
 
+.products__modal-open:hover,
+.products__modal-open:focus {
+    background-color: var(--main-background-color);
+    opacity: 0.75;
+    transition: var(--transition);
+}
+
 .products__modal {
     position: absolute;
     display: block;
@@ -640,7 +660,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 568px;
+    height: 100%;
     padding: 32px 40px;
+    overflow-y: auto;
     background: var(--white-text-color);
     border-radius: 10px;
     border: 2px solid var(--accent-color);
@@ -660,6 +682,9 @@ header {
 .products__modal-img {
     display: block;
     margin: auto;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
     margin-bottom: 32px;
 }
 
@@ -693,11 +718,39 @@ header {
 }
 
 .products__modal-article {
+    margin-bottom: 24px;
     font-family: var(--main-font-family);
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
     text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
+}
+
+.products__modal-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__modal-left-item {
+    margin-bottom: 11px;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.64px;
+    letter-spacing: 0.56px;
+    font-style: normal;
+    color: var(--black-text-color);
+}
+
+.products__modal-right-item {
+    margin-bottom: 11px;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.64px;
+    letter-spacing: 0.56px;
     font-style: normal;
     color: var(--black-text-color);
 }

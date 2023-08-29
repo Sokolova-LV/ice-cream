@@ -814,7 +814,7 @@ header {
     letter-spacing: 0.56px;
 }
 
-.about__btn {
+.about__modal-open {
     display: block;
     margin-top: 54px;
     width: 164px;
@@ -834,27 +834,74 @@ header {
     cursor: pointer;
 }
 
-.about__arrow {
-    margin-left: 4px;
-}
-
-.about__btn:hover {
+.about__modal-open:hover {
     background-color: var(--hover);
     transition: var(--transition);
 }
 
-.about__btn:focus {
+.about__modal-open:focus {
     color: var(--white-text-color)
 }
 
-.about__arrow:focus {
-    fill: var(--white-text-color);
-    transition: var(--transition);
-}
-
-.about__btn:disabled {
+.about__modal-open:disabled {
     background-color: var(--disabled);
     color: var(--black);
+}
+
+.about__modal {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 449px;
+    padding: 32px 40px;
+    overflow-y: auto;
+    background: var(--white-text-color);
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+}
+
+.about__modal-title {
+    margin-bottom: 32px;
+    font-family: var(--accent-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
+}
+
+.about__modal-rectangle {
+    position: relative;
+    margin: auto;
+    width: 448px;
+    height: 205px;
+    border-radius: 10px;
+    background: var(--black);
+}
+
+.about__modal-img {
+    position: absolute;
+    display: block;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+    cursor: pointer;
+}
+
+.about__modal-text {
+    margin: 32px auto 0;
+    width: 448px;
+    text-align: justify;
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-style: normal;
+    color: var(--black-text-color);
 }
 
 .advantages {
@@ -1210,6 +1257,7 @@ hr:after {
     padding: 12px 40px;
     background-color: var(--accent-color);
     border-radius: 10px;
+    border: transparent;
 
     font-family: var(--main-font-family);
     font-size: 14px;
@@ -1218,6 +1266,8 @@ hr:after {
     text-align: center;
     font-style: normal;
     color: var(--black-text-color);
+
+    cursor: pointer;
 }
 
 .contacts-btn__locations:hover {
@@ -1233,6 +1283,56 @@ hr:after {
 .contacts-btn__locations:disabled {
     color: var(--black-text-color);
     background-color: var(--disabled);
+}
+
+.contacts__modal {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 458px;
+    padding: 32px 40px;
+    overflow-y: auto;
+    background: var(--white-text-color);
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+}
+
+.contacts__modal-title {
+    margin-bottom: 32px;
+    font-family: var(--accent-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    font-style: normal;
+    color: var(--black-text-color);
+}
+
+.contacts__modal-img {
+    margin: auto;
+}
+
+.contacts__modal-btn {
+    margin: 32px auto 0;
+    display: block;
+    padding: 12px 34px;
+    width: 145px;
+    height: 42px;
+
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    color: var(--black-text-color);
+
+    border-radius: 10px;
+    background: var(--accent-color);
+    border-color: transparent;
 }
 
 .contacts-btn__franchise {

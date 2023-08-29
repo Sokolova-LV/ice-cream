@@ -364,7 +364,7 @@
             <h2 class="about__title">how it’s made?</h2>
 
             <div class="about__wrap">
-                <img src="./img/cow.png" alt="cow" class="about__image">
+                <img src="./img/about/cow.png" alt="cow" class="about__image">
                 <div class="about__column">
                     <p class="about__text">Ice is a place where you will become not only a little happier, but also healthier. Health is the
                         main value for us, and we follow it when creating our handmade desserts.<br>
@@ -374,11 +374,21 @@
                             milkshakes.<br>
                             This is enough to choose ice cream and coffee for any mood!</span>
                     </p>
-                    <button class="about__btn">Read more
-                        <svg class="about__arrow" width="12" height="12">
-                            <use href="./img/icons.svg#icon-btn-arrow"></use>
-                        </svg>
-                    </button>
+                    <button about-modal-open class="about__modal-open">Read more</button>
+                    <div class="backdrop is-hidden" about-modal>
+                        <div class="about__modal">
+                            <button about-modal-close class="modal-close">
+                                <svg width="24" height="24">
+                                    <use href="./img/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                            <h2 class="about__modal-title">How it’s made?</h2>
+                            <div class="about__modal-rectangle"></div>
+                            <img class="about__modal-img" src="./img/about/play.svg" alt="play">
+                            <p class="about__modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -584,7 +594,25 @@
             </div>
             <ul class="contacts-btn__list">
                 <li class="contacts-btn__item">
-                    <a href="#" class="contacts-btn__locations">Our Locations</a>
+                    <button contacts-modal-open href="#" class="contacts-btn__locations">Our Locations</button>
+                    <div class="backdrop is-hidden" contacts-modal>
+                        <div class="contacts__modal">
+                            <button contacts-modal-close class="modal-close">
+                                <svg width="24" height="24">
+                                    <use href="./img/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                            <h3 class="contacts__modal-title">Our Locations</h3>
+                            <picture>
+                                <source
+                                    srcset="./img/contacts/map-1x.png 1x, ./img/contacts/map-2x.png 2x"
+                                    media=""
+                                    type="image/png"/>
+                                    <img class="contacts__modal-img" src="./img/contacts/map-1x.png" alt="map">
+                            </picture>
+                            <a href="https://www.google.com.ua/maps/preview" class="contacts__modal-btn">Open map</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="contacts-btn__item">
                     <a href="#" class="contacts-btn__franchise">Franchise</a>
@@ -635,5 +663,7 @@
 
     <script src="./js/header-modal.js"></script>
     <script src="./js/products-modal.js"></script>
+    <script src="./js/about-modal.js"></script>
+    <script src="./js/contacts-modal.js"></script>
 </body>
 </html>

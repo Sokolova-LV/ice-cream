@@ -615,7 +615,22 @@
                     </div>
                 </li>
                 <li class="contacts-btn__item">
-                    <a href="#" class="contacts-btn__franchise">Franchise</a>
+                    <button contacts2-modal-open href="#" class="contacts-btn__franchise">Franchise</button>
+                    <div class="backdrop is-hidden" contacts2-modal>
+                        <div class="contacts__modal">
+                            <button contacts2-modal-close class="modal-close">
+                                <svg width="24" height="24">
+                                    <use href="./img/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                            <h3 class="contacts__modal-title">Thank you for your interest in owning an Ice Cream shop</h3>
+                            <picture>
+                                <source srcset="./img/contacts/map-1x.png 1x, ./img/contacts/map-2x.png 2x" media="" type="image/png" />
+                                <img class="contacts__modal-img" src="./img/contacts/map-1x.png" alt="map">
+                            </picture>
+                            <a href="https://www.google.com.ua/maps/preview" class="contacts__modal-btn">Open map</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>

@@ -554,10 +554,9 @@ header {
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
 }
 
-.products__item:first-child::before {
+.products__img:first-child {
     position: absolute;
     transform: translateX(10%) translateY(-60%);
-    content: url(/img/products/first-1x.png);
 }
 
 .products__item {
@@ -566,10 +565,9 @@ header {
     background: #EFD478;
 }
 
-.products__item::before {
+.products__img {
     position: absolute;
     transform: translateX(10%) translateY(-60%);
-    content: url(/img/products/second-1x.png);
 }
 
 .products__item:last-child {
@@ -578,10 +576,9 @@ header {
     background: #D6936D;
 }
 
-.products__item:last-child::before {
+.products__img:last-child {
     position: absolute;
     transform: translateX(10%) translateY(-60%);
-    content: url(/img/products/third-1x.png);
 }
 
 .products__title {

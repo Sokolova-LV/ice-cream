@@ -225,10 +225,9 @@ header {
     transition: var(--transition);
 }
 
-.header__modal-item:first-child::before {
+.header__modal-img:first-child {
     position: absolute;
     transform: translateY(-50%);
-    content: url(/img/products/modal/first.png);
 }
 
 .header__modal-item {
@@ -247,10 +246,9 @@ header {
     transition: var(--transition);
 }
 
-.header__modal-item::before {
+.header__modal-img {
     position: absolute;
     transform: translateY(-50%);
-    content: url(/img/products/modal/second.png);
 }
 
 .header__modal-item:last-child {
@@ -269,10 +267,9 @@ header {
     transition: var(--transition);
 }
 
-.header__modal-item:last-child::before {
+.header__modal-img:last-child {
     position: absolute;
     transform: translateY(-50%);
-    content: url(/img/products/modal/third.png);
 }
 
 .header__modal-text {

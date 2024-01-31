@@ -787,7 +787,7 @@ header {
 
 .products__img:first-child {
     position: absolute;
-    transform: translateX(0%) translateY(-40%);
+    transform: translateX(0%) translateY(-50%);
 
     @media screen and (min-width: 768px) {
         transform: translateX(0%) translateY(-60%);
@@ -818,7 +818,7 @@ header {
 
 .products__img {
     position: absolute;
-        transform: translateX(0%) translateY(-40%);
+        transform: translateX(0%) translateY(-50%);
     
         @media screen and (min-width: 768px) {
             transform: translateX(0%) translateY(-60%);
@@ -849,7 +849,7 @@ header {
 
 .products__img:last-child {
     position: absolute;
-        transform: translateX(0%) translateY(-40%);
+        transform: translateX(0%) translateY(-50%);
     
         @media screen and (min-width: 768px) {
             transform: translateX(0%) translateY(-60%);
